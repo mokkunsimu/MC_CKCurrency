@@ -121,3 +121,4 @@ copy {
     into "$buildDir/classes/java/main"
     from sourceSets.main.resources
 }
+tasks.withType(Jar) {compileJava.options.encoding = 'UTF-8'}
